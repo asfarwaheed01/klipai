@@ -78,7 +78,7 @@ const HeroSection = () => {
             transition={{ duration: 0.5, delay: 1 }}
           >
             <motion.button
-              className="bg-green-500 hover:bg-green-600 text-black px-8 py-4 rounded-full text-[14px] transition-all duration-300 transform hover:scale-105 flex items-center gap-2 shadow-lg"
+              className="bg-green-500 hover:bg-green-800 cursor-pointer text-black px-8 py-4 rounded-full text-[14px] transition-all duration-300 transform hover:scale-105 flex items-center gap-2 shadow-lg"
               whileHover={{
                 scale: 1.05,
                 boxShadow: "0 20px 40px rgba(34, 197, 94, 0.3)",
