@@ -14,10 +14,10 @@ const HeroSection = () => {
   const [mobileImageLoaded, setMobileImageLoaded] = useState(false);
 
   return (
-    <section className="relative md:pt-[7%] pt-[10%] min-h-screen bg-white overflow-hidden">
+    <section className="relative md:pt-16 lg:pt-20 xl:pt-24 pt-20 pb-16 md:pb-20 lg:pb-24 xl:pb-28 bg-white overflow-hidden">
       {/* Animated background blur */}
       <motion.div
-        className="hidden md:block absolute top-[10%] left-[20%] w-[800px] h-[800px] rounded-full blur-xl opacity-80 z-0"
+        className="hidden md:block absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full blur-xl opacity-80 z-0"
         style={{
           background:
             "radial-gradient(circle, rgba(157, 255, 176, 0.9) 0%, rgba(157, 255, 176, 0.6) 50%, transparent 100%)",
@@ -28,7 +28,7 @@ const HeroSection = () => {
       />
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="flex flex-col items-center justify-center min-h-screen py-12 md:py-0 text-center">
+        <div className="flex flex-col items-center justify-center md:min-h-screen md:py-0 text-center">
           <motion.div
             className="mx-auto mb-8"
             initial={{ opacity: 0, y: 50 }}

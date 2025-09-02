@@ -18,7 +18,7 @@ const BenefitsSection = () => {
     <section className="py-16 lg:py-12 bg-white relative overflow-hidden">
       {/* Green gradient background effect */}
       <motion.div
-        className="hidden md:block absolute top-[20%] left-0 w-[550px] h-[550px] rounded-full blur-xl opacity-80"
+        className="hidden md:block absolute top-[20%] left-4 lg:left-8 xl:left-12 w-[400px] h-[400px] lg:w-[450px] lg:h-[450px] xl:w-[550px] xl:h-[550px] rounded-full blur-xl opacity-80"
         style={{
           background:
             "radial-gradient(circle, rgba(157, 255, 176, 0.9) 0%, rgba(157, 255, 176, 0.6) 50%, transparent 100%)",
