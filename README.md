@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# KlipAI Landing Page
 
-## Getting Started
+A modern, responsive landing page for KlipAI - an AI-powered decentralized wallet built with Next.js 15 and TypeScript.
 
-First, run the development server:
+## Setup & Installation
 
 ```bash
+# Clone repository
+git clone <https://github.com/asfarwaheed01/klipai.git>
+cd klipai-landing
+
+# Install dependencies
+npm install
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Build for production
+npm run build
+npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Technology Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Next.js 15** - React framework with App Router
+- **TypeScript** - Type safety and developer experience
+- **Tailwind CSS** - Utility-first styling
+- **Framer Motion** - Smooth animations and transitions
+- **Lucide React** - Icon library
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Design Implementation
 
-## Learn More
+### Figma to Code Decisions
 
-To learn more about Next.js, take a look at the following resources:
+- **Navigation**: Implemented floating navbar with rounded corners and backdrop blur
+- **Hero Section**: Created layered iPhone mockup with absolute positioned floating cards
+- **Green Glow Effects**: Used multiple gradient layers with blur effects for authentic lighting
+- **Grid Layout**: Benefits section uses CSS Grid with responsive breakpoints
+- **Partner Carousel**: Horizontal sliding animation with seamless infinite loop
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Responsive Breakpoints
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Mobile**: `< 768px` - Single column layout, stacked elements
+- **Tablet**: `768px - 1024px` - Two-column grid, adjusted spacing
+- **Desktop**: `> 1024px` - Full multi-column layouts, larger typography
 
-## Deploy on Vercel
+### Design Assumptions
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Container Width**: Used standard container class with max-width constraints
+- **Color Values**: Interpreted green shades from Figma (#12ED39, #FF8933, #D2EAE4, #F4F2F0)
+- **Typography**: Used system fonts with bold weights for headings
+- **Spacing**: Applied consistent 16px/24px padding systems
+- **Shadow Effects**: Enhanced with multiple blur layers for depth
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## AI Development Process
+
+Built collaboratively with Claude AI assistance for:
+
+- Component structure and TypeScript interfaces
+- Tailwind CSS responsive utilities
+- Framer Motion animation implementations
+- Image optimization and Next.js best practices
+- Cross-browser compatibility solutions
+
+## Known Limitations
+
+- **Animation Performance**: Complex animations may impact performance on older devices
+- **Image Dependencies**: Requires all SVG/PNG assets to be properly imported
+- **Browser Support**: Modern browsers only (ES2020+ features used)
+- **Static Content**: No CMS integration, content is hardcoded
