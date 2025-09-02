@@ -5,9 +5,9 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import comp1 from "@/public/assets/images/comp1.svg";
 import comp2 from "@/public/assets/images/comp3.svg";
-import comp3 from "@/public/assets/images/comp4.svg";
-import comp4 from "@/public/assets/images/comp5.svg";
-import comp5 from "@/public/assets/images/comp6.svg";
+import comp3 from "@/public/assets/images/Comp4.svg";
+import comp4 from "@/public/assets/images/Comp5.svg";
+import comp5 from "@/public/assets/images/Comp6.svg";
 
 const PartnersSection = () => {
   const partners = [
