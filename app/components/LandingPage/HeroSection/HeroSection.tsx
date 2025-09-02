@@ -85,7 +85,9 @@ const HeroSection = () => {
                     </div>
 
                     <div>
-                      <span className="text-[18px] text-white ">$2,951.73</span>
+                      <span className="text-[18px] !text-white ">
+                        $2,951.73
+                      </span>
                       <div className="text-[18px] text-black">APL 17</div>
                     </div>
                   </div>
@@ -116,7 +118,7 @@ const HeroSection = () => {
                     </div>
                     <div>
                       <div className="flex items-center gap-2">
-                        <span className="text-[18px] text-white">
+                        <span className="text-[18px] !text-white">
                           $3,271.20
                         </span>
                       </div>
@@ -131,8 +133,8 @@ const HeroSection = () => {
                 <div className="bg-[#8C8C8C57] backdrop-blur-sm rounded-full p-2 shadow-lg border border-white/20">
                   <div className="flex items-center gap-2">
                     <div>
-                      <span className="text-[12px] text-whtie">$2,951.73</span>
-                      <div className="text-[12px] text-white/70">APL 17</div>
+                      <span className="text-[12px] text-white">$2,951.73</span>
+                      <div className="text-[12px] text-black">APL 17</div>
                     </div>
                     <div>
                       <div className="flex flex-col items-center gap-0">
@@ -178,7 +180,7 @@ const HeroSection = () => {
                     </div>
                     <div>
                       <span className="text-[12px] text-white">$3,271.20</span>
-                      <div className="text-[12px] text-white/70">RLS 24</div>
+                      <div className="text-[12px] text-black">RLS 24</div>
                     </div>
                   </div>
                 </div>

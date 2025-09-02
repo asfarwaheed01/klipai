@@ -23,7 +23,7 @@ const PartnersSection = () => {
       <div className="">
         {/* Heading */}
         <div className="text-center mb-12">
-          <h2 className="text-lg sm:text-[24px] text-[#C4C4C4] font-medium">
+          <h2 className="text-[24px] md:w-full w-[320px] mx-auto sm:text-[24px] text-[#C4C4C4] font-medium">
             Partnered with worldwide leading companies
           </h2>
         </div>
@@ -31,7 +31,7 @@ const PartnersSection = () => {
         {/* Rotating Partners Grid */}
         <div className="relative overflow-hidden">
           {/* Desktop/Tablet View - Single Row */}
-          <div className="hidden md:block">
+          <div className="block">
             <motion.div
               className="flex gap-12 lg:gap-16 xl:gap-20 items-center justify-center"
               animate={{ x: [0, -100, 0] }}
@@ -78,36 +78,6 @@ const PartnersSection = () => {
                 </motion.div>
               ))}
             </motion.div>
-          </div>
-
-          {/* Mobile View - Grid Layout */}
-          <div className="md:hidden">
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-8 items-center justify-items-center">
-              {partners.map((partner, index) => (
-                <motion.div
-                  key={partner.id}
-                  className="flex-shrink-0"
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{
-                    duration: 0.5,
-                    delay: index * 0.1,
-                    repeat: Infinity,
-                    repeatType: "reverse",
-                    repeatDelay: 3,
-                  }}
-                  whileHover={{ scale: 1.05 }}
-                >
-                  <Image
-                    src={partner.src}
-                    alt={partner.alt}
-                    width={100}
-                    height={50}
-                    className="h-10 w-auto opacity-60 hover:opacity-100 transition-opacity duration-300 grayscale hover:grayscale-0"
-                  />
-                </motion.div>
-              ))}
-            </div>
           </div>
         </div>
 

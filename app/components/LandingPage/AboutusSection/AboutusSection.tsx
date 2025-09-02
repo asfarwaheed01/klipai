@@ -10,9 +10,7 @@ const AboutusSection = () => {
         <div className="flex flex-col md:flex-row md:gap-20 gap-10 items-center">
           {/* Left side - iPhone container with background */}
           <div className="relative md:w-[50%] flex justify-center overflow-hidden lg:justify-start">
-            {/* Background container */}
             <div className="relative bg-[#F4F2F0] w-full flex justify-center rounded-sm p-16 !pb-0 sm:p-12 lg:p-16">
-              {/* Main iPhone */}
               <div className="relative">
                 <Image
                   src={iphone}
@@ -23,7 +21,6 @@ const AboutusSection = () => {
                 />
               </div>
 
-              {/* Floating Bitcoin card - Top Left (Orange background) */}
               <div className="absolute md:top-[11%] top-6 left-[-2%]  z-10">
                 <div className="bg-white rounded-md md:p-3 p-1 shadow-lg border border-gray-200">
                   <div className="flex items-center md:gap-10 gap-4">
@@ -53,7 +50,6 @@ const AboutusSection = () => {
                 </div>
               </div>
 
-              {/* Floating Bitcoin card - Bottom Right (Light green background) */}
               <div className="absolute bottom-[4%] right-[-1%] z-10">
                 <div className="bg-white md:w-[200px] w-[150px] rounded-sm md:p-3 p-1 shadow-xl border border-gray-200">
                   <div className="flex items-center gap-3">
