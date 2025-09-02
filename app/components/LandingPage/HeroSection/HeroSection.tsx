@@ -10,6 +10,13 @@ import iphonemobile from "@/public/assets/images/iphone_mobile.png";
 const HeroSection = () => {
   return (
     <section className="relative md:pt-[7%] pt-[10%] min-h-screen bg-white overflow-hidden">
+      <div
+        className="hidden md:block absolute top-[10%] left-[20%] w-[800px] h-[800px] rounded-full blur-xl opacity-80"
+        style={{
+          background:
+            "radial-gradient(circle, rgba(157, 255, 176, 0.9) 0%, rgba(157, 255, 176, 0.6) 50%, transparent 100%)",
+        }}
+      ></div>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="flex flex-col items-center justify-center min-h-screen py-12 md:py-0 text-center">
           <div className="mx-auto mb-8">
