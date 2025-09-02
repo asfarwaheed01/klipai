@@ -17,7 +17,7 @@ const HeroSection = () => {
     <section className="relative md:pt-[7%] pt-[10%] min-h-screen bg-white overflow-hidden">
       {/* Animated background blur */}
       <motion.div
-        className="hidden md:block absolute top-[10%] left-[20%] w-[800px] h-[800px] rounded-full blur-xl opacity-80"
+        className="hidden md:block absolute top-[10%] left-[20%] w-[800px] h-[800px] rounded-full blur-xl opacity-80 z-0"
         style={{
           background:
             "radial-gradient(circle, rgba(157, 255, 176, 0.9) 0%, rgba(157, 255, 176, 0.6) 50%, transparent 100%)",
@@ -72,13 +72,13 @@ const HeroSection = () => {
 
           {/* CTA Button */}
           <motion.div
-            className="mb-12 hidden md:block"
+            className="relative z-50 mb-12 hidden md:block"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: 1 }}
           >
             <motion.button
-              className="bg-green-500 hover:bg-green-800 cursor-pointer text-black px-8 py-4 rounded-full text-[14px] transition-all duration-300 transform hover:scale-105 flex items-center gap-2 shadow-lg"
+              className="bg-green-500 hover:bg-green-600 cursor-pointer text-black px-8 py-4 rounded-full text-[14px] transition-all duration-300 transform hover:scale-105 flex items-center gap-2 shadow-lg"
               whileHover={{
                 scale: 1.05,
                 boxShadow: "0 20px 40px rgba(34, 197, 94, 0.3)",
